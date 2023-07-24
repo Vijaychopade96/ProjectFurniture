@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmountCalcy</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+    <link rel="stylesheet" href="windows.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="heading">
+            <h1 class="head">Vitthal Furniture</h1>
+        </div>
+
+
+        <div class="nav">
+            <ul class="navList">
+                <li><a href="index.html" class="btn draw-border title">Home</a></li>
+                <li><a href="#" class="btn draw-border title Windows">Windows</a></li>
+                <li><a href="door.html" class="btn draw-border title">Doors</a></li>
+                <li><a href="search.html" class="btn draw-borde title">Search</a></li>
+                <li><a href="#" class="btn draw-border title">Calcy</a></li>
+            </ul>
+        </div>
+        <br><br>
+
+
+
+
+        <form action="windowStore.php" method="post">
+            <div class="info">
+                <div class="nameMain">
+                    <label for="name" class="name">Customer Name:</label>&nbsp;
+                    <input type="text" id="name" placeholder="Enter Customer Name" class="nameInput">
+                </div>
+
+                <div class="numberMain">
+                    <label for="number" class="number">Phone Number:</label>&nbsp;
+                    <input type="number" id="number" placeholder="Enter Phone Number" class="numberInput">
+                </div>
+            </div>
+
+        </form>
+        <br><br>
+
+
+        <div id="mainFiled" class="mainField ">
+            <div class="inputValue inputFileds1">
+                <input type="number" class="windows mysize" id="w1" value="1" disabled />
+                <select id="s1" class="selectSize mysize">
+                    <option value="" selected disabled>Select size</option>
+                    <option value="70">4x3</option>
+                    <option value="100">4x5</option>
+                    <option value="150">5x4</option>
+                    <option value="50">small</option>
+                </select>
+                <input type="number" id="we1" class="weight mysize" placeholder="weight"
+                    oninput="changeAmount(this.id)" />
+                <input type="number" id="a1" class="amt mysize" placeholder="amount" />
+                <button class="inc" id="inc1" onclick="addFields()"><span class="material-symbols-outlined">
+                        library_add
+                    </span></button>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="total">
+            <input type="submit" value="Total" class="bTotal" onclick="Total()">
+            <input type="number" id="total" class="iTotal">
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+.main{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchField{
+    background-color: transparent;
+    border-bottom: 2px solid lime;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.searchField #iSearch{
+        height: 25px;
+        font-size: 20px;
+        background-color: rgb(218, 207, 207);
+        border: none;
+        text-align: center;
+        margin-right: 5px;
+}
+.searchField  #searchButton{
+        width: 125px;
+        height: 25px;
+        border: 2px solid lime;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        cursor:grab;
+}
+#backButton{
+    width: 125px;
+    height: 25px;
+    border: 2px solid lime;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor:grab;
+    position: absolute;
+    bottom: 10%;
+    margin: auto;
+    text-decoration: none;
+
+}
+
+
+ 

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+
+}
+.main{
+    background-color: gray;
+    height: 100vh;
+    overflow: scroll;
+}
+.heading {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+.heading .title{
+    text-align: center;
+}
+.head {
+    font-size: 52px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 2px 3px cyan;
+    font-weight: bolder;
+}
+/*--------------------------------------------------NavBar-------------------------------------------------------------------*/
+.nav{
+  border-bottom: 2px solid black;
+  height: 100px;
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+/*----------------------------hover effect for nav---------------------------*/
+.navList .Windows::after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: lime;
+	left: 0%;
+	bottom: 0px;
+ 	transition: all 0.2s ease-in-out;
+     margin: auto;
+}
+.title {
+    font-size: 1.5rem;
+	position: relative;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+}
+
+.title::after {
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 2px;
+	background-color: lime;
+	left: 50%;
+	bottom: 0px;
+ 	transition: all 0.2s ease-in-out;
+     margin: auto;
+}
+
+.navList :hover .title::after {
+	width: 100%;
+    left: 0%;
+}
+/*-------------------------------------------------------*/
+.nav .navList,.info{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
+/* .nav .navList li a {
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+} */
+   
+/*--------------------------------------------------Personal Info-------------------------------------------------------------------*/
+
+.info  {
+    font-size: 20px;
+    background-color: gray;
+
+}
+.name,.number{
+    border-bottom: 2px solid black;
+    color: black;
+}
+.nameInput,.numberInput{
+    height: 25px;
+    font-size: 20px;
+    background-color: rgb(218, 207, 207);
+    border: none;
+    text-align: center;
+    text-transform: capitalize;
+}
+.mysize{
+    height: 22px;
+}
+ 
+
+
+
+
+ 
+/*--------------------------------------------------Mainfield-------------------------------------------------------------------*/
+
+#mainFiled {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+#inputFileds{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{
+    display: none;
+}
+
+.selectSize{
+    text-align: center;
+    background-color: rgb(198, 188, 188);
+    color: black;
+}
+
+
+.total{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.bTotal{
+    width: 80px;
+    height: 25px;
+}
+.iTotal{
+    width: 100px;
+    height: 22px;
+    text-align: center;
+}
+.mainField{
+    width: 80%;
+    border: 2px solid lime;
+    margin: auto;
+}
+.mysize{
+    text-align: center;
+}
+.material-symbols-outlined{
+    font-size: 8px;
+}
+.material-symbols-outlined{
+    background-color: #000000;
+    width: 23px;
+    height: 27px;
+    color: lime;
+}
